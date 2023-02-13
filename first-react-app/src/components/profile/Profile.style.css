@@ -1,0 +1,54 @@
+.container{
+   border:5px solid #fde;
+   width:50%;
+   margin:5rem auto;
+   padding-left:1rem;
+   
+
+}
+
+.container:hover{
+    background: rgba(149, 14, 14, 0.419);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    cursor:pointer;
+    color:teal;
+    transition:  all 1s ease-in-out;
+    -webkit-transition:  all 1s ease-in-out;
+    -moz-transition:  all 1s ease-in-out;
+    -ms-transition:  all 1s ease-in-out;
+    -o-transition:  all 1s ease-in-out;
+}
+
+
+
+
+
+ ul{
+   
+    
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    
+    
+    
+
+    
+}
+
+li{
+    margin-right:1rem;
+   
+    background: rgba(19, 111, 36, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color:#fff;
+    padding:0.5rem 1rem;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+
