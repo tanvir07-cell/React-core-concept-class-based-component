@@ -1,13 +1,13 @@
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ skillA, skillB, skillC }) => {
   return (
     <div className="skills">
       <h3>Skills</h3>
       <ul>
-        <li>C</li>
-        <li>JavaScript</li>
-        <li>Python</li>
+        <li>{skillA}</li>
+        <li>{skillB}</li>
+        <li>{skillC}</li>
       </ul>
     </div>
   );

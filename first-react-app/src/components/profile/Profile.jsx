@@ -8,9 +8,9 @@ class Profile extends React.Component {
   render() {
     return (
       <div className="container">
-        <Bio />
+        <Bio name="Tanvir Rifat" title="Full Stack Web Developer" />
 
-        <Skills></Skills>
+        <Skills skillA="JS" skillB="ReactJs" skillC="NodeJs"></Skills>
 
         <Social></Social>
       </div>
