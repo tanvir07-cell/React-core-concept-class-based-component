@@ -5,8 +5,27 @@ import Profile from "./components/profile/Profile";
 import Skills from "./components/profile/Skills";
 import MyProps from "./components/props";
 
-class App extends React.Component {
+class Child extends React.Component {
   render() {
+    this.props.func(this);
+    return <p>I am the child component</p>;
+  }
+}
+
+class App extends React.Component {
+  // using state in the class component:
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+  // passing function as a props to the children:
+  getContext(context) {
+    console.log(context);
+  }
+  render() {
+    this.getContext(this);
     /**
      * without jsx:
      */
@@ -52,6 +71,15 @@ class App extends React.Component {
               skillC="Go"
             ></Skills>
           </div>
+
+          <Child func={this.getContext}></Child>
+          <h3>Count : {this.state.count}</h3>
+
+          <button
+            onClick={() => this.setState({ count: this.state.count + 1 })}
+          >
+            Increment
+          </button>
         </div>
       </>
     );
